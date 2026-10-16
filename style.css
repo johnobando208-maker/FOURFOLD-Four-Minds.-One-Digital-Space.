@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -838,6 +837,7 @@ body {
         opacity: 0;
         transform: translateY(12px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1048,5 +1048,91 @@ footer {
         scroll-behavior: auto !important;
         animation-duration: 0.01ms !important;
         transition-duration: 0.01ms !important;
+    }
+}
+
+.profile-overlay:target .profile-box {
+    animation: profileCardRise 0.55s cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
+.profile-overlay:target .profile-photo {
+    animation: profilePhotoRise 0.6s ease both;
+    animation-delay: 0.08s;
+}
+
+.profile-overlay:target .profile-header .eyebrow,
+.profile-overlay:target .profile-header h2,
+.profile-overlay:target .profile-header h3,
+.profile-overlay:target .profile-details,
+.profile-overlay:target .profile-bio {
+    animation: profileTextRise 0.55s cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
+.profile-overlay:target .profile-header .eyebrow {
+    animation-delay: 0.12s;
+}
+
+.profile-overlay:target .profile-header h2 {
+    animation-delay: 0.18s;
+}
+
+.profile-overlay:target .profile-header h3 {
+    animation-delay: 0.24s;
+}
+
+.profile-overlay:target .profile-details {
+    animation-delay: 0.30s;
+}
+
+.profile-overlay:target .profile-bio {
+    animation-delay: 0.38s;
+}
+
+@keyframes profileCardRise {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes profilePhotoRise {
+    from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.94);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes profileTextRise {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .profile-overlay:target,
+    .profile-overlay:target .profile-box,
+    .profile-overlay:target .profile-photo,
+    .profile-overlay:target .profile-header .eyebrow,
+    .profile-overlay:target .profile-header h2,
+    .profile-overlay:target .profile-header h3,
+    .profile-overlay:target .profile-details,
+    .profile-overlay:target .profile-bio {
+        animation: none !important;
     }
 }
