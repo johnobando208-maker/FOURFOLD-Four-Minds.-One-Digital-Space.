@@ -1,215 +1,291 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#171819">
     <title>FOURFOLD — Four Minds. One Digital Space.</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav class="sidebar">
-        <div class="sidebar-brand">
-            <h2>FOURFOLD</h2>
+<body id="top">
+
+    <aside class="sidebar">
+        <a href="#home" class="brand">
+            <img src="images/logo.png" alt="FOURFOLD logo">
+            <span>FOURFOLD</span>
+        </a>
+
+        <p class="side-label">NAVIGATION</p>
+
+        <nav class="nav-links">
+            <a href="#home"><span>01</span> Home</a>
+            <a href="#about"><span>02</span> About Us</a>
+            <a href="#team"><span>03</span> Our Team</a>
+            <a href="#projects"><span>04</span> Skills</a>
+            <a href="#contact"><span>05</span> Contact</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <span>FOUR MINDS</span>
+            <span>ONE DIGITAL SPACE</span>
         </div>
+    </aside>
 
-        <div class="nav-links">
-            <a href="#home" id="home-button"><small>01</small> Home</a>
-            <a href="#about"><small>02</small> About Us</a>
-            <a href="#team"><small>03</small> Our Team</a>
-            <a href="#projects"><small>04</small> Skills</a>
-            <a href="#contact"><small>05</small> Contact</a>
-        </div>
+    <main>
 
-        <p class="sidebar-footer">
-            CREATIVE MINDS<br>
-            WORKING TOGETHER
-        </p>
-    </nav>
+        <section id="home" class="hero">
+            <div class="hero-waves">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-    <main class="main-content">
-        <section id="home" class="section hero">
-            <p class="eyebrow">WELCOME TO FOURFOLD</p>
-            <h1>
-                We Create.<br>
-                We Build.<br>
-                <span>We Inspire.</span>
-            </h1>
-            <p class="hero-description">
-                Four individuals, one team, and a shared passion
-                for creativity, technology, and meaningful projects.
-            </p>
-            <a href="#about" class="button">Discover Our Team <span>↗</span></a>
+            <div class="hero-content">
+                <p class="eyebrow">WELCOME TO FOURFOLD</p>
+
+                <h1>
+                    We Create.<br>
+                    We Build.<br>
+                    <span>We Inspire.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Four minds. One digital space.
+                    Explore our team, skills, and shared work.
+                </p>
+
+                <a href="#team" class="button">
+                    Discover Our Team <span>↗</span>
+                </a>
+            </div>
+
             <div class="hero-bottom">
                 <span>FOURFOLD</span>
-                <span>2026 — PRESENT</span>
+                <span>LEARN · CREATE · GROW</span>
             </div>
+
+            <a href="#about" class="scroll-cue" aria-label="Scroll to About Us">
+                <span>↓</span>
+            </a>
         </section>
 
-        <section id="about" class="section">
-            <p class="eyebrow">GET TO KNOW US</p>
-            <h2 class="section-title">About <span>Us.</span></h2>
-
-            <div class="about-card">
-                <span class="large-number">01</span>
-                <h3>Who We Are</h3>
-                <p>
-                    We are a team of four students who believe in teamwork,
-                    creativity, and continuous learning. Each member brings
-                    unique ideas and skills to our projects. Together, we
-                    share responsibilities, overcome challenges, and work
-                    toward our goals.
+        <section id="about" class="section about-section">
+            <div class="section-heading">
+                <p class="eyebrow">GET TO KNOW US</p>
+                <h2>About <span>Us.</span></h2>
+                <p class="section-description">
+                    Four people, different perspectives, and a shared
+                    space to learn, create, and grow.
                 </p>
             </div>
 
-            <div class="values-grid">
-                <article class="value-card">
-                    <span class="value-number">01</span>
+            <div class="about-grid">
+                <article class="about-card about-main">
+                    <span class="card-number">01 / WHO WE ARE</span>
+                    <h3>A Team of Four.</h3>
+                    <p>
+                        We are a group of four students working together
+                        to build our digital portfolio. This website
+                        introduces our team, highlights our skills, and
+                        presents our work and learning journey.
+                    </p>
+                </article>
+
+                <article class="about-card">
+                    <span class="card-number">02 / TEAMWORK</span>
+                    <div class="about-icon">✳</div>
                     <h3>Teamwork</h3>
-                    <p>Working together to achieve shared goals.</p>
+                    <p>We share ideas, communicate, and help one another.</p>
                 </article>
 
-                <article class="value-card">
-                    <span class="value-number">02</span>
+                <article class="about-card">
+                    <span class="card-number">03 / CREATIVITY</span>
+                    <div class="about-icon">◇</div>
                     <h3>Creativity</h3>
-                    <p>Turning fresh ideas into meaningful work.</p>
+                    <p>We explore ideas and find ways to present them.</p>
                 </article>
 
-                <article class="value-card">
-                    <span class="value-number">03</span>
+                <article class="about-card">
+                    <span class="card-number">04 / GROWTH</span>
+                    <div class="about-icon">↗</div>
                     <h3>Growth</h3>
-                    <p>Learning, improving, and moving forward.</p>
+                    <p>We develop our skills through practice and learning.</p>
                 </article>
             </div>
         </section>
 
-        <section id="team" class="section">
-            <p class="eyebrow">THE PEOPLE BEHIND THE WORK</p>
-            <h2 class="section-title">Meet Our <span>Team.</span></h2>
-            <p class="section-description">
-                Hover over a photo for a quick introduction.
-                Click a member to explore their full profile.
-            </p>
+        <section id="team" class="section team-section">
+            <div class="section-heading">
+                <p class="eyebrow">THE PEOPLE BEHIND THE WORK</p>
+                <h2>Meet Our <span>Team.</span></h2>
+                <p class="section-description">
+                    Explore each profile to learn more about our members.
+                    Click a card to open its full profile.
+                </p>
+            </div>
 
             <div class="team-grid">
-                <a href="#member1" class="member-card">
-                    <div class="member-image">
-                        <img src="images/member1.jpg" alt="Member One">
-                        <div class="hover-info">
-                            <span class="mini-label">TEAM MEMBER 01</span>
-                            <h3>Obando, John Luis Corpuz</h3>
-                            <p>Leads the team, organizes tasks, and helps everyone work together.</p>
-                            <span class="view-profile">VIEW FULL PROFILE ↗</span>
-                        </div>
-                    </div>
-                    <div class="member-info">
-                        <span class="member-number">01 / TEAM MEMBER</span>
-                        <h3>Obando, John Luis C.</h3>
-                        <p>Team Leader</p>
-                    </div>
-                </a>
 
-                <a href="#member2" class="member-card">
-                    <div class="member-image">
-                        <img src="images/member2.jpg" alt="Member Two">
-                        <div class="hover-info">
-                            <span class="mini-label">TEAM MEMBER 02</span>
-                            <h3>Cabangcala, Roman Rioto</h3>
-                            <p>Creates attractive layouts and engaging website designs.</p>
-                            <span class="view-profile">VIEW FULL PROFILE ↗</span>
+                <article class="member-card">
+                    <a href="#member1" class="member-link">
+                        <div class="member-photo">
+                            <img src="images/member1.jpg" alt="Photo of Member One">
+                            <span class="photo-number">01</span>
+                            <span class="photo-open">VIEW PROFILE ↗</span>
                         </div>
+                        <div class="member-info">
+                            <p class="member-role">TEAM MEMBER 01</p>
+                            <h3>Member One</h3>
+                            <p class="member-subtitle">Add role here</p>
+                        </div>
+                    </a>
+                    <div class="achievement-card">
+                        <span>ACHIEVEMENT 01</span>
+                        <h4>Add an achievement</h4>
+                        <p>Replace this text with a real project, milestone, or award.</p>
                     </div>
-                    <div class="member-info">
-                        <span class="member-number">02 / TEAM MEMBER</span>
-                        <h3>Cabangcala, Roman R.</h3>
-                        <p>Web Designer</p>
-                    </div>
-                </a>
+                </article>
 
-                <a href="#member3" class="member-card">
-                    <div class="member-image">
-                        <img src="images/member3.jpg" alt="Member Three">
-                        <div class="hover-info">
-                            <span class="mini-label">TEAM MEMBER 03</span>
-                            <h3>Galvan, Tristan Romero</h3>
-                            <p>Builds website features and solves technical problems.</p>
-                            <span class="view-profile">VIEW FULL PROFILE ↗</span>
+                <article class="member-card">
+                    <a href="#member2" class="member-link">
+                        <div class="member-photo">
+                            <img src="images/member2.jpg" alt="Photo of Member Two">
+                            <span class="photo-number">02</span>
+                            <span class="photo-open">VIEW PROFILE ↗</span>
                         </div>
+                        <div class="member-info">
+                            <p class="member-role">TEAM MEMBER 02</p>
+                            <h3>Member Two</h3>
+                            <p class="member-subtitle">Add role here</p>
+                        </div>
+                    </a>
+                    <div class="achievement-card">
+                        <span>ACHIEVEMENT 02</span>
+                        <h4>Add an achievement</h4>
+                        <p>Replace this text with a real project, milestone, or award.</p>
                     </div>
-                    <div class="member-info">
-                        <span class="member-number">03 / TEAM MEMBER</span>
-                        <h3>Galvan, Tristan R.</h3>
-                        <p>Developer</p>
-                    </div>
-                </a>
+                </article>
 
-                <a href="#member4" class="member-card">
-                    <div class="member-image">
-                        <img src="images/member4.jpg" alt="Member Four">
-                        <div class="hover-info">
-                            <span class="mini-label">TEAM MEMBER 04</span>
-                            <h3>Aquino, Benedict Esquejo</h3>
-                            <p>Researches information and develops useful project ideas.</p>
-                            <span class="view-profile">VIEW FULL PROFILE ↗</span>
+                <article class="member-card">
+                    <a href="#member3" class="member-link">
+                        <div class="member-photo">
+                            <img src="images/member3.jpg" alt="Photo of Member Three">
+                            <span class="photo-number">03</span>
+                            <span class="photo-open">VIEW PROFILE ↗</span>
                         </div>
+                        <div class="member-info">
+                            <p class="member-role">TEAM MEMBER 03</p>
+                            <h3>Member Three</h3>
+                            <p class="member-subtitle">Add role here</p>
+                        </div>
+                    </a>
+                    <div class="achievement-card">
+                        <span>ACHIEVEMENT 03</span>
+                        <h4>Add an achievement</h4>
+                        <p>Replace this text with a real project, milestone, or award.</p>
                     </div>
-                    <div class="member-info">
-                        <span class="member-number">04 / TEAM MEMBER</span>
-                        <h3>Aquino, Benedict E.</h3>
-                        <p>Researcher</p>
+                </article>
+
+                <article class="member-card">
+                    <a href="#member4" class="member-link">
+                        <div class="member-photo">
+                            <img src="images/member4.jpg" alt="Photo of Member Four">
+                            <span class="photo-number">04</span>
+                            <span class="photo-open">VIEW PROFILE ↗</span>
+                        </div>
+                        <div class="member-info">
+                            <p class="member-role">TEAM MEMBER 04</p>
+                            <h3>Member Four</h3>
+                            <p class="member-subtitle">Add role here</p>
+                        </div>
+                    </a>
+                    <div class="achievement-card">
+                        <span>ACHIEVEMENT 04</span>
+                        <h4>Add an achievement</h4>
+                        <p>Replace this text with a real project, milestone, or award.</p>
                     </div>
-                </a>
+                </article>
+
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-heading">
+                    <p class="eyebrow">OUR PROGRESS</p>
+                    <h3>Achievement <span>Timeline.</span></h3>
+                    <p>Document your group's real milestones as the project develops.</p>
+                </div>
+
+                <div class="timeline-list">
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <p class="timeline-date">MILESTONE 01 · ADD DATE</p>
+                        <h4>Project Started</h4>
+                        <p>Describe when your team began working on this project.</p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <p class="timeline-date">MILESTONE 02 · ADD DATE</p>
+                        <h4>Design and Planning</h4>
+                        <p>Add a real detail about your planning or design process.</p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <p class="timeline-date">MILESTONE 03 · ADD DATE</p>
+                        <h4>Website Development</h4>
+                        <p>Describe a feature your team actually completed.</p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <p class="timeline-date">MILESTONE 04 · ADD DATE</p>
+                        <h4>Final Presentation</h4>
+                        <p>Record your actual presentation or project completion date.</p>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section id="projects" class="section section-anchor">
+        <section id="projects" class="section skills-section">
             <div class="section-heading">
                 <p class="eyebrow">WHAT WE CAN DO</p>
-                <h2>Our <span>Skills</span></h2>
-                <p>Discover the skills and abilities our team brings together.</p>
+                <h2>Our <span>Skills.</span></h2>
+                <p class="section-description">
+                    Skills we are learning and developing through our work.
+                </p>
             </div>
 
-            <div class="projects-grid">
-                <article class="project-card">
-                    <span class="project-number">SKILL 01</span>
-                    <div class="project-icon">01</div>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <span class="skill-number">01</span>
+                    <div class="skill-symbol">&lt;/&gt;</div>
                     <h3>HTML</h3>
-                    <p>
-                        We use HTML to create the structure of our website,
-                        including headings, paragraphs, images, links,
-                        and different sections.
-                    </p>
-                    <div class="tags">
-                        <span>Web Structure</span>
+                    <p>Building page structure and organizing website content.</p>
+                    <div class="skill-tags">
+                        <span>Structure</span>
                         <span>HTML5</span>
                     </div>
                 </article>
 
-                <article class="project-card">
-                    <span class="project-number">SKILL 02</span>
-                    <div class="project-icon">02</div>
+                <article class="skill-card">
+                    <span class="skill-number">02</span>
+                    <div class="skill-symbol">✳</div>
                     <h3>CSS</h3>
-                    <p>
-                        We use CSS to improve the appearance of our website
-                        through colors, layouts, fonts, spacing,
-                        and visual effects.
-                    </p>
-                    <div class="tags">
-                        <span>Web Design</span>
+                    <p>Designing layouts, colors, typography, and animations.</p>
+                    <div class="skill-tags">
                         <span>Styling</span>
+                        <span>Responsive Design</span>
                     </div>
                 </article>
 
-                <article class="project-card">
-                    <span class="project-number">SKILL 03</span>
-                    <div class="project-icon">03</div>
+                <article class="skill-card">
+                    <span class="skill-number">03</span>
+                    <div class="skill-symbol">◇</div>
                     <h3>Teamwork</h3>
-                    <p>
-                        We share ideas, divide responsibilities,
-                        communicate with one another, and work together
-                        to accomplish our goals.
-                    </p>
-                    <div class="tags">
+                    <p>Sharing responsibilities, communicating, and collaborating.</p>
+                    <div class="skill-tags">
                         <span>Communication</span>
                         <span>Collaboration</span>
                     </div>
@@ -218,200 +294,132 @@
         </section>
 
         <section id="contact" class="section contact-section">
-            <div class="contact-heading">
-                <p class="eyebrow">05 — GET IN TOUCH</p>
-                <h2>LET'S START A<br><span>CONVERSATION.</span></h2>
-                <p class="contact-intro">
-                    Have a project, question, or creative idea?
-                    We would love to hear from you. Send us a message
-                    and let's create something meaningful together.
+            <div class="contact-panel">
+                <p class="eyebrow">LET'S START A CONVERSATION</p>
+                <h2>Have a project<br>or idea in <span>mind?</span></h2>
+                <p class="contact-description">
+                    We'd be happy to connect. Update the email link below
+                    with an address your team is comfortable sharing.
                 </p>
-            </div>
 
-            <div class="contact-layout">
-                <div class="contact-information">
-                    <p class="contact-label">CONTACT INFORMATION</p>
+                <a class="button" href="mailto:yourteam@example.com">
+                    Email Our Team <span>↗</span>
+                </a>
 
-                    <div class="contact-item">
-                        <span class="contact-icon">✉</span>
-                        <div>
-                            <p>Email Address</p>
-                            <a href="mailto:team7@gmail.com">team7@gmail.com</a>
-                        </div>
+                <div class="contact-details">
+                    <div>
+                        <span class="detail-label">OUR TEAM</span>
+                        <p>Four minds. One vision.</p>
                     </div>
-
-                    <div class="contact-item">
-                        <span class="contact-icon">✦</span>
-                        <div>
-                            <p>Our Team</p>
-                            <span>Four minds. One vision.</span>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <span class="contact-icon">↗</span>
-                        <div>
-                            <p>Our Goal</p>
-                            <span>Creating, learning, and growing together.</span>
-                        </div>
-                    </div>
-
-                    <div class="contact-note">
-                        <span>LET'S MAKE IT HAPPEN.</span>
-                        <p>Great ideas begin with a simple conversation.</p>
+                    <div>
+                        <span class="detail-label">OUR GOAL</span>
+                        <p>Creating, learning, and growing together.</p>
                     </div>
                 </div>
-
-                <div class="contact-form-card">
-                    <p class="contact-label">SEND US A MESSAGE</p>
-                    <h3>Tell us what's on your mind.</h3>
-
-                    <form action="mailto:yourteam@example.com" method="post" enctype="text/plain">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="contact-name">Your Name</label>
-                                <input type="text" id="contact-name" name="Name" placeholder="Enter your name" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="contact-email">Your Email</label>
-                                <input type="email" id="contact-email" name="Email" placeholder="Enter your email" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contact-subject">Subject</label>
-                            <input type="text" id="contact-subject" name="Subject" placeholder="What is this about?" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contact-message">Your Message</label>
-                            <textarea id="contact-message" name="Message" rows="5" placeholder="Write your message here..." required></textarea>
-                        </div>
-
-                        <button type="submit" class="contact-submit">
-                            SEND MESSAGE <span>↗</span>
-                        </button>
-                        <p class="form-note">Submitting may open your email application.</p>
-                    </form>
-                </div>
-            </div>
-
-            <div class="contact-bottom">
-                <span>FOURFOLD</span>
-                <span>BUILT WITH HTML &amp; CSS</span>
-                <a href="#home">BACK TO TOP ↑</a>
             </div>
         </section>
 
-        <section id="member1" class="profile-overlay">
-            <div class="profile-box">
-                <a href="#team" class="close-button">✕ Close</a>
-
-                <div class="profile-header">
-                    <img src="images/member1.jpg" alt="Member One" class="profile-photo">
-                    <p class="eyebrow">TEAM MEMBER 01</p>
-                    <h2>Obando, John Luis Corpuz</h2>
-                    <h3>Team Leader</h3>
-                </div>
-
-                <div class="profile-details">
-                    <p><strong>Age</strong><span>18</span></p>
-                    <p><strong>Role</strong><span>Team Leader</span></p>
-                    <p><strong>Skills</strong><span>Leadership, Communication</span></p>
-                    <p><strong>Hobbies</strong><span>Reading, Learning</span></p>
-                    <p><strong>Specialty</strong><span>Team Coordination</span></p>
-                </div>
-
-                <div class="profile-bio">
-                    <h3>About Me</h3>
-                    <p>I help organize our team, coordinate tasks, and encourage everyone to work together. I enjoy solving problems, sharing ideas, and learning new skills.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="member2" class="profile-overlay">
-            <div class="profile-box">
-                <a href="#team" class="close-button">✕ Close</a>
-
-                <div class="profile-header">
-                    <img src="images/member2.jpg" alt="Member Two" class="profile-photo">
-                    <p class="eyebrow">TEAM MEMBER 02</p>
-                    <h2>Cabangcala, Roman Rioto</h2>
-                    <h3>Web Designer</h3>
-                </div>
-
-                <div class="profile-details">
-                    <p><strong>Age</strong><span>18</span></p>
-                    <p><strong>Role</strong><span>Web Designer</span></p>
-                    <p><strong>Skills</strong><span>HTML, CSS, Design</span></p>
-                    <p><strong>Hobbies</strong><span>Drawing, Designing</span></p>
-                    <p><strong>Specialty</strong><span>Website Layouts</span></p>
-                </div>
-
-                <div class="profile-bio">
-                    <h3>About Me</h3>
-                    <p>I focus on creating attractive and user-friendly website layouts. I enjoy combining colors, typography, and creative ideas to make our projects look professional.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="member3" class="profile-overlay">
-            <div class="profile-box">
-                <a href="#team" class="close-button">✕ Close</a>
-
-                <div class="profile-header">
-                    <img src="images/member3.jpg" alt="Member Three" class="profile-photo">
-                    <p class="eyebrow">TEAM MEMBER 03</p>
-                    <h2>Galvan, Tristan Romero</h2>
-                    <h3>Developer</h3>
-                </div>
-
-                <div class="profile-details">
-                    <p><strong>Age</strong><span>19</span></p>
-                    <p><strong>Role</strong><span>Developer</span></p>
-                    <p><strong>Skills</strong><span>HTML, CSS, Problem-solving</span></p>
-                    <p><strong>Hobbies</strong><span>Coding, Gaming</span></p>
-                    <p><strong>Specialty</strong><span>Website Development</span></p>
-                </div>
-
-                <div class="profile-bio">
-                    <h3>About Me</h3>
-                    <p>I work on building and improving the technical parts of our website. I enjoy writing code, fixing problems, and discovering how websites work.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="member4" class="profile-overlay">
-            <div class="profile-box">
-                <a href="#team" class="close-button">✕ Close</a>
-
-                <div class="profile-header">
-                    <img src="images/member4.jpg" alt="Member Four" class="profile-photo">
-                    <p class="eyebrow">TEAM MEMBER 04</p>
-                    <h2>Aquino, Benedict Esquejo</h2>
-                    <h3>Researcher</h3>
-                </div>
-
-                <div class="profile-details">
-                    <p><strong>Age</strong><span>18</span></p>
-                    <p><strong>Role</strong><span>Researcher</span></p>
-                    <p><strong>Skills</strong><span>Basic Computer Programming, Microsoft Office</span></p>
-                    <p><strong>Hobbies</strong><span>Motorcycle, Basketball, Nature trip</span></p>
-                    <p><strong>Specialty</strong><span>Information Gathering</span></p>
-                </div>
-
-                <div class="profile-bio">
-                    <h3>About Me</h3>
-                    <p>I am a hardworking and responsible BSIT student who is passionate about technology and computers. I am eager to learn new skills in programming, website development, and information technology. I am willing to face challenges, improve my knowledge, and work with others to achieve my goals.</p>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <p>© 2026 FOURFOLD</p>
-            <p>Designed with HTML &amp; CSS.</p>
+        <footer class="site-footer">
+            <a href="#top" class="footer-brand">FOURFOLD<span>.</span></a>
+            <p>Four Minds. One Digital Space.</p>
+            <p>© 2026 FOURFOLD · Built with HTML &amp; CSS</p>
         </footer>
+
     </main>
+
+    <a href="#top" class="back-to-top" aria-label="Back to Top">↑</a>
+
+    <section id="member1" class="profile-overlay" aria-label="Member One profile">
+        <a href="#team" class="profile-backdrop" aria-label="Close profile"></a>
+        <article class="profile-box">
+            <a href="#team" class="profile-close" aria-label="Close profile">×</a>
+            <div class="profile-image">
+                <img src="images/member1.jpg" alt="Photo of Member One">
+            </div>
+            <div class="profile-content">
+                <p class="eyebrow">TEAM MEMBER 01</p>
+                <h2>Member One</h2>
+                <p class="profile-role">Add role here</p>
+                <div class="profile-divider"></div>
+                <p><strong>Introduction</strong></p>
+                <p>Add a short introduction written or approved by this member.</p>
+                <p><strong>Skills</strong></p>
+                <p>Add this member's actual skills.</p>
+                <p><strong>Hobbies</strong></p>
+                <p>Add hobbies they choose to share.</p>
+                <a class="button resume-button" href="resumes/member1.pdf" download>Download Resume ↓</a>
+            </div>
+        </article>
+    </section>
+
+    <section id="member2" class="profile-overlay" aria-label="Member Two profile">
+        <a href="#team" class="profile-backdrop" aria-label="Close profile"></a>
+        <article class="profile-box">
+            <a href="#team" class="profile-close" aria-label="Close profile">×</a>
+            <div class="profile-image">
+                <img src="images/member2.jpg" alt="Photo of Member Two">
+            </div>
+            <div class="profile-content">
+                <p class="eyebrow">TEAM MEMBER 02</p>
+                <h2>Member Two</h2>
+                <p class="profile-role">Add role here</p>
+                <div class="profile-divider"></div>
+                <p><strong>Introduction</strong></p>
+                <p>Add a short introduction written or approved by this member.</p>
+                <p><strong>Skills</strong></p>
+                <p>Add this member's actual skills.</p>
+                <p><strong>Hobbies</strong></p>
+                <p>Add hobbies they choose to share.</p>
+                <a class="button resume-button" href="resumes/member2.pdf" download>Download Resume ↓</a>
+            </div>
+        </article>
+    </section>
+
+    <section id="member3" class="profile-overlay" aria-label="Member Three profile">
+        <a href="#team" class="profile-backdrop" aria-label="Close profile"></a>
+        <article class="profile-box">
+            <a href="#team" class="profile-close" aria-label="Close profile">×</a>
+            <div class="profile-image">
+                <img src="images/member3.jpg" alt="Photo of Member Three">
+            </div>
+            <div class="profile-content">
+                <p class="eyebrow">TEAM MEMBER 03</p>
+                <h2>Member Three</h2>
+                <p class="profile-role">Add role here</p>
+                <div class="profile-divider"></div>
+                <p><strong>Introduction</strong></p>
+                <p>Add a short introduction written or approved by this member.</p>
+                <p><strong>Skills</strong></p>
+                <p>Add this member's actual skills.</p>
+                <p><strong>Hobbies</strong></p>
+                <p>Add hobbies they choose to share.</p>
+                <a class="button resume-button" href="resumes/member3.pdf" download>Download Resume ↓</a>
+            </div>
+        </article>
+    </section>
+
+    <section id="member4" class="profile-overlay" aria-label="Member Four profile">
+        <a href="#team" class="profile-backdrop" aria-label="Close profile"></a>
+        <article class="profile-box">
+            <a href="#team" class="profile-close" aria-label="Close profile">×</a>
+            <div class="profile-image">
+                <img src="images/member4.jpg" alt="Photo of Member Four">
+            </div>
+            <div class="profile-content">
+                <p class="eyebrow">TEAM MEMBER 04</p>
+                <h2>Member Four</h2>
+                <p class="profile-role">Add role here</p>
+                <div class="profile-divider"></div>
+                <p><strong>Introduction</strong></p>
+                <p>Add a short introduction written or approved by this member.</p>
+                <p><strong>Skills</strong></p>
+                <p>Add this member's actual skills.</p>
+                <p><strong>Hobbies</strong></p>
+                <p>Add hobbies they choose to share.</p>
+                <a class="button resume-button" href="resumes/member4.pdf" download>Download Resume ↓</a>
+            </div>
+        </article>
+    </section>
+
 </body>
 </html>
