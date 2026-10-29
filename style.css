@@ -1,6 +1,4 @@
-/* ==============================
-   FOURFOLD — BASE STYLES
-============================== */
+
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
@@ -57,9 +55,6 @@ img {
     background: var(--silver-light);
 }
 
-/* ==============================
-   SIDEBAR AND NAVIGATION
-============================== */
 
 .sidebar {
     position: fixed;
@@ -148,9 +143,6 @@ img {
     letter-spacing: 1.5px;
 }
 
-/* ==============================
-   MAIN CONTENT
-============================== */
 
 main {
     min-width: 0;
@@ -198,9 +190,7 @@ main {
     line-height: 1.9;
 }
 
-/* ==============================
-   BUTTONS
-============================== */
+
 
 .button {
     display: inline-flex;
@@ -234,9 +224,7 @@ main {
     transform: translate(3px, -3px);
 }
 
-/* ==============================
-   HERO SECTION
-============================== */
+
 
 .hero {
     position: relative;
@@ -337,7 +325,7 @@ main {
     animation: arrow-bounce 1.6s ease-in-out infinite;
 }
 
-/* Animated silver waves */
+
 
 .hero-waves {
     position: absolute;
@@ -434,9 +422,6 @@ main {
     }
 }
 
-/* ==============================
-   ABOUT US SECTION
-============================== */
 
 .about-section {
     background: #1a1c1d;
@@ -505,9 +490,6 @@ main {
     font-size: 31px;
 }
 
-/* ==============================
-   TEAM SECTION
-============================== */
 
 .team-section {
     background:
@@ -626,9 +608,6 @@ main {
     font-size: 12px;
 }
 
-/* ==============================
-   CERTIFICATE / ACHIEVEMENT CARDS
-============================== */
 
 .achievement-section {
     padding: 0 25px 25px;
@@ -770,9 +749,6 @@ main {
     border-color: var(--silver-light);
 }
 
-/* ==============================
-   ACHIEVEMENT TIMELINE
-============================== */
 
 .timeline {
     margin-top: 100px;
@@ -854,9 +830,6 @@ main {
     line-height: 1.8;
 }
 
-/* ==============================
-   SKILLS SECTION
-============================== */
 
 .skills-section {
     background: #1a1c1d;
@@ -932,9 +905,6 @@ main {
     font-size: 9px;
 }
 
-/* ==============================
-   CONTACT SECTION
-============================== */
 
 .contact-section {
     background:
@@ -993,9 +963,6 @@ main {
     font-size: 12px;
 }
 
-/* ==============================
-   FOOTER
-============================== */
 
 .site-footer {
     display: flex;
@@ -1021,9 +988,6 @@ main {
     color: var(--gold);
 }
 
-/* ==============================
-   BACK TO TOP
-============================== */
 
 .back-to-top {
     position: fixed;
@@ -1050,10 +1014,6 @@ main {
     transform: translateY(-4px);
 }
 
-/* ==============================
-   PROFILE OVERLAYS
-   CSS-only profile windows
-============================== */
 
 .profile-overlay {
     position: fixed;
@@ -1234,9 +1194,6 @@ main {
     transform: translateY(-2px);
 }
 
-/* ==============================
-   RESPONSIVE DESIGN
-============================== */
 
 @media (max-width: 1200px) {
     :root {
@@ -1555,9 +1512,6 @@ main {
     }
 }
 
-/* ==============================
-   REDUCED MOTION ACCESSIBILITY
-============================== */
 
 @media (prefers-reduced-motion: reduce) {
     *,
